@@ -1,0 +1,18 @@
+Folder PATH listing for volume SSDDrive Win10 64
+Volume serial number is 2A00-D9FE
+C:.
+³   .gitignore
+³   DailyCreed.bat
+³   LICENSE
+³   README.md
+³   tree.txt
+³   
+ÀÄÄÄcreed_popup
+        creeds.json
+        creed_popup_daemon.py
+        creed_state.json
+        extract_creeds.py
+        inspect_doc.py
+        test_popup.py
+        The_Creed_101_Final_With_Author 2025-06-04 16_20_49.docx
+        
