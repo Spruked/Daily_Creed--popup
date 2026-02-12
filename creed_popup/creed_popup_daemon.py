@@ -86,8 +86,12 @@ def popup_job():
     idx = str(state["day_index"])
     creed_text = creeds.get(idx, f"(Missing creed {idx} in {CREEDS_JSON})")
 
+    # Add the daily quote at the top
+    daily_quote = '"Renova temet ipsum"'
+    full_message = f"{daily_quote}\n\n{creed_text}"
+
     title = f"Creed {idx} of 101"
-    show_popup(title, creed_text)
+    show_popup(title, full_message)
 
 def main():
     print("Starting...")
