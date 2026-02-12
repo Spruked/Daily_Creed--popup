@@ -94,9 +94,13 @@ def popup_job():
     show_popup(title, full_message)
 
 def main():
-    print("Starting...")
-    popup_job()
-    print("Popup job finished.")
+    for t in POPUP_TIMES:
+        schedule.every().day.at(t).do(popup_job)
+
+    while True:
+        schedule.run_pending()
+        time.sleep(5)
+
 if __name__ == "__main__":
     main()
 
